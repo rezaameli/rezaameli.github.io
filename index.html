@@ -9129,15 +9129,26 @@ label {
 }
 /* Flexible box model classes */
 /* Taken from Alex Russell http://infrequently.org/2009/08/css-3-progress/ */
+<<<<<<< HEAD
 /* This file is a compatability layer.  It allows the usage of flexible box
 model layouts accross multiple browsers, including older browsers.  The newest,
 universal implementation of the flexible box model is used when available (see
 `Modern browsers` comments below).  Browsers that are known to implement this
+=======
+/* This file is a compatability layer.  It allows the usage of flexible box 
+model layouts accross multiple browsers, including older browsers.  The newest,
+universal implementation of the flexible box model is used when available (see
+`Modern browsers` comments below).  Browsers that are known to implement this 
+>>>>>>> 3015f809e476c721a78291c635fd850211a83c82
 new spec completely include:
 
     Firefox 28.0+
     Chrome 29.0+
+<<<<<<< HEAD
     Internet Explorer 11+
+=======
+    Internet Explorer 11+ 
+>>>>>>> 3015f809e476c721a78291c635fd850211a83c82
     Opera 17.0+
 
 Browsers not listed, including Safari, are supported via the styling under the
@@ -12519,7 +12530,11 @@ div#pager .ui-resizable-handle {
   background: #f7f7f7;
   border-top: 1px solid #cfcfcf;
   border-bottom: 1px solid #cfcfcf;
+<<<<<<< HEAD
   /* This injects handle bars (a short, wide = symbol) for
+=======
+  /* This injects handle bars (a short, wide = symbol) for 
+>>>>>>> 3015f809e476c721a78291c635fd850211a83c82
         the resize handle. */
 }
 div#pager .ui-resizable-handle::after {
@@ -13018,7 +13033,11 @@ ul.typeahead-list  > li > a.pull-right {
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
     </style>
 <style type="text/css">
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 3015f809e476c721a78291c635fd850211a83c82
 /* Temporary definitions which will become obsolete with Notebook release 5.0 */
 .ansi-black-fg { color: #3E424D; }
 .ansi-black-bg { background-color: #3E424D; }
@@ -16310,7 +16329,11 @@ div#maintoolbar {
         }
     });
 </script>
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 3015f809e476c721a78291c635fd850211a83c82
     </style>
 
 
@@ -16328,6 +16351,7 @@ div#notebook {
   div.cell {
     display: block;
     page-break-inside: avoid;
+<<<<<<< HEAD
   }
   div.output_wrapper {
     display: block;
@@ -16336,6 +16360,16 @@ div#notebook {
   div.output {
     display: block;
     page-break-inside: avoid;
+=======
+  } 
+  div.output_wrapper { 
+    display: block;
+    page-break-inside: avoid; 
+  }
+  div.output { 
+    display: block;
+    page-break-inside: avoid; 
+>>>>>>> 3015f809e476c721a78291c635fd850211a83c82
   }
 }
 </style>
@@ -16629,7 +16663,11 @@ Requirement already satisfied: urllib3!=1.25.0,!=1.25.1,&lt;1.26,&gt;=1.21.1 in 
 <span class="n">appts</span> <span class="o">=</span> <span class="n">appts</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;PatientId&#39;</span><span class="p">,</span> <span class="s1">&#39;AppointmentID&#39;</span><span class="p">,</span> <span class="s1">&#39;Neighbourhood&#39;</span><span class="p">])</span>
 <span class="n">sch_datetimes</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="n">appt_datetimes</span> <span class="o">=</span> <span class="p">[]</span>
+<<<<<<< HEAD
 <span class="n">sch_seasons</span> <span class="o">=</span> <span class="p">[]</span>
+=======
+<span class="n">sch_seasons</span> <span class="o">=</span> <span class="p">[]</span> 
+>>>>>>> 3015f809e476c721a78291c635fd850211a83c82
 <span class="n">appt_seasons</span> <span class="o">=</span> <span class="p">[]</span>
 
 <span class="k">def</span> <span class="nf">calc_season</span><span class="p">(</span><span class="n">season</span><span class="p">):</span>
@@ -16647,11 +16685,16 @@ Requirement already satisfied: urllib3!=1.25.0,!=1.25.1,&lt;1.26,&gt;=1.21.1 in 
 <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">appts</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
     <span class="n">sch_date</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="s1">&#39;ScheduledDay&#39;</span><span class="p">],</span> <span class="s2">&quot;%Y-%m-</span><span class="si">%d</span><span class="s2">T%H:%M:%SZ&quot;</span><span class="p">)</span>
     <span class="n">appt_date</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="s1">&#39;AppointmentDay&#39;</span><span class="p">],</span> <span class="s2">&quot;%Y-%m-</span><span class="si">%d</span><span class="s2">T%H:%M:%SZ&quot;</span><span class="p">)</span>
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 3015f809e476c721a78291c635fd850211a83c82
     <span class="n">sch_month</span> <span class="o">=</span> <span class="n">sch_date</span><span class="o">.</span><span class="n">month</span>
     <span class="n">appt_month</span> <span class="o">=</span> <span class="n">appt_date</span><span class="o">.</span><span class="n">month</span>
     <span class="n">sch_season</span> <span class="o">=</span> <span class="p">(</span><span class="n">sch_month</span><span class="o">%</span><span class="k">12</span> + 3)//3
     <span class="n">appt_season</span> <span class="o">=</span> <span class="p">(</span><span class="n">appt_month</span><span class="o">%</span><span class="k">12</span> + 3)//3
+<<<<<<< HEAD
 
     <span class="n">sch_seasons</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">calc_season</span><span class="p">(</span><span class="n">sch_season</span><span class="p">))</span>
     <span class="n">appt_seasons</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">calc_season</span><span class="p">(</span><span class="n">appt_season</span><span class="p">))</span>
@@ -16659,6 +16702,15 @@ Requirement already satisfied: urllib3!=1.25.0,!=1.25.1,&lt;1.26,&gt;=1.21.1 in 
     <span class="n">sch_datetimes</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">datetime</span><span class="p">(</span><span class="n">sch_date</span><span class="o">.</span><span class="n">year</span><span class="p">,</span> <span class="n">sch_date</span><span class="o">.</span><span class="n">month</span><span class="p">,</span> <span class="n">sch_date</span><span class="o">.</span><span class="n">day</span><span class="p">,</span>
                                   <span class="n">sch_date</span><span class="o">.</span><span class="n">hour</span><span class="p">,</span> <span class="n">sch_date</span><span class="o">.</span><span class="n">minute</span><span class="p">,</span> <span class="n">sch_date</span><span class="o">.</span><span class="n">second</span><span class="p">))</span>
     <span class="n">appt_datetimes</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">datetime</span><span class="p">(</span><span class="n">appt_date</span><span class="o">.</span><span class="n">year</span><span class="p">,</span> <span class="n">appt_date</span><span class="o">.</span><span class="n">month</span><span class="p">,</span> <span class="n">appt_date</span><span class="o">.</span><span class="n">day</span><span class="p">,</span>
+=======
+    
+    <span class="n">sch_seasons</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">calc_season</span><span class="p">(</span><span class="n">sch_season</span><span class="p">))</span>
+    <span class="n">appt_seasons</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">calc_season</span><span class="p">(</span><span class="n">appt_season</span><span class="p">))</span>
+    
+    <span class="n">sch_datetimes</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">datetime</span><span class="p">(</span><span class="n">sch_date</span><span class="o">.</span><span class="n">year</span><span class="p">,</span> <span class="n">sch_date</span><span class="o">.</span><span class="n">month</span><span class="p">,</span> <span class="n">sch_date</span><span class="o">.</span><span class="n">day</span><span class="p">,</span> 
+                                  <span class="n">sch_date</span><span class="o">.</span><span class="n">hour</span><span class="p">,</span> <span class="n">sch_date</span><span class="o">.</span><span class="n">minute</span><span class="p">,</span> <span class="n">sch_date</span><span class="o">.</span><span class="n">second</span><span class="p">))</span>
+    <span class="n">appt_datetimes</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">datetime</span><span class="p">(</span><span class="n">appt_date</span><span class="o">.</span><span class="n">year</span><span class="p">,</span> <span class="n">appt_date</span><span class="o">.</span><span class="n">month</span><span class="p">,</span> <span class="n">appt_date</span><span class="o">.</span><span class="n">day</span><span class="p">,</span> 
+>>>>>>> 3015f809e476c721a78291c635fd850211a83c82
                                    <span class="n">appt_date</span><span class="o">.</span><span class="n">hour</span><span class="p">,</span> <span class="n">appt_date</span><span class="o">.</span><span class="n">minute</span><span class="p">,</span> <span class="n">appt_date</span><span class="o">.</span><span class="n">second</span><span class="p">))</span>
 
 <span class="n">appts</span><span class="p">[</span><span class="s1">&#39;ScheduledDay&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">sch_datetimes</span>
@@ -16813,7 +16865,11 @@ Requirement already satisfied: urllib3!=1.25.0,!=1.25.1,&lt;1.26,&gt;=1.21.1 in 
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
+<<<<<<< HEAD
 <div class=" highlight hl-ipython3"><pre><span></span>
+=======
+<div class=" highlight hl-ipython3"><pre><span></span> 
+>>>>>>> 3015f809e476c721a78291c635fd850211a83c82
 </pre></div>
 
     </div>
@@ -16825,7 +16881,11 @@ Requirement already satisfied: urllib3!=1.25.0,!=1.25.1,&lt;1.26,&gt;=1.21.1 in 
   </div>
 </body>
 
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> 3015f809e476c721a78291c635fd850211a83c82
 
 
 </html>
